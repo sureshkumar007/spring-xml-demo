@@ -21,7 +21,7 @@ public class Main
         System.out.println(act);
         //Movies class
         Movie movies=context.getBean("movie",Movie.class);
-        System.out.println("movie class");
+        System.out.println("movie class cocksfkjhdfjdfjkhdfkjhkjdsijfiugybyfhjerp9y");
         System.out.println(movies);
 
 
