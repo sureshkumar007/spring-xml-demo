@@ -5,28 +5,31 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-        <bean id="actor1" class="com.stackroute.domain.Actor">
-<!--        <property name="name" value="suresh"></property>-->
-<!--        <property name="gender" value="Male"></property>-->
-<!--        <property name="age" value="22"></property>-->
+<!--        <bean id="actor1" class="com.stackroute.domain.Actor">-->
+<!--&lt;!&ndash;        <property name="name" value="suresh"></property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="gender" value="Male"></property>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="age" value="22"></property>&ndash;&gt;-->
 
-                <constructor-arg index="0" value="suresh"> </constructor-arg>
-                <constructor-arg index="1" value="Male"> </constructor-arg>
-                <constructor-arg index="2" value="22"> </constructor-arg>
-        </bean>
-        <bean id="actor2" class="com.stackroute.domain.Actor">
-                <constructor-arg index="0" value="Kumar"> </constructor-arg>
-                <constructor-arg index="1" value="Male"> </constructor-arg>
-                <constructor-arg index="2" value="22"> </constructor-arg>
+<!--                <constructor-arg index="0" value="suresh"> </constructor-arg>-->
+<!--                <constructor-arg index="1" value="Male"> </constructor-arg>-->
+<!--                <constructor-arg index="2" value="22"> </constructor-arg>-->
+<!--        </bean>-->
+<!--        <bean id="actor2" class="com.stackroute.domain.Actor">-->
+<!--                <constructor-arg index="0" value="Kumar"> </constructor-arg>-->
+<!--                <constructor-arg index="1" value="Male"> </constructor-arg>-->
+<!--                <constructor-arg index="2" value="22"> </constructor-arg>-->
 
-        </bean>
+<!--        </bean>-->
 
 <!--        <bean id="movie1" class="com.stackroute.domain.Movie" autowire="byType">-->
 
 <!--        </bean>-->
 
-        <bean name="movie2" class="com.stackroute.domain.Movie" >
-               <constructor-arg index="0" ref="actor2"></constructor-arg>
+<!--        <bean name="movie2" class="com.stackroute.domain.Movie" >-->
+<!--               <constructor-arg index="0" ref="actor2"></constructor-arg>-->
+<!--        </bean>-->
+        <bean id="beanLifeCycle" class="com.stackroute.demo.BeanLifeCycleDemoBean" init-method="customInit" destroy-method="customDestroy">
+
         </bean>
 
 </beans>

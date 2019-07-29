@@ -1,11 +1,13 @@
 package com.stackroute;
 
+import com.stackroute.demo.BeanLifeCycleDemoBean;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
@@ -17,9 +19,12 @@ public class Main
 {
     public static void main( String[] args )
     {
-        ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+        AbstractApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+       // BeanLifeCycleDemoBean beanLifeCycleDemoBean=context.getBean("beanLifeCycle",BeanLifeCycleDemoBean.class);
+        //System.out.println(beanLifeCycleDemoBean);
+        context.registerShutdownHook();
         //Movie mov1=context.getBean("movie1",Movie.class);
-        Movie mov2=context.getBean("movie2",Movie.class);
+//        Movie mov2=context.getBean("movie2",Movie.class);
 
 //        System.out.println("checking test");
 //        Actor act=context.getBean("actor",Actor.class);
@@ -38,7 +43,7 @@ public class Main
 //        Movie mov4=factory.getBean("movie2",Movie.class);
 //
        // System.out.println(mov1.getActor());
-        System.out.println(mov2.getActor());
+//        System.out.println(mov2.getActor());
 
 //        System.out.println("testing bean factory");
 //        Actor act1=context.getBean("actor",Actor.class);
