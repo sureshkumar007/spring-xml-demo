@@ -1,0 +1,26 @@
+
+[squid:S1854#"8Remove this useless assignment to local variable "act1".(’š¦·øÿÿÿÿ8›·ÒÇÃ-
+V
+squid:S106'"9Replace this use of System.out or System.err by a logger.(»ıÉÓ8›·ÒÇÃ-
+esquid:CallToDeprecatedMethod!"6Remove this use of "XmlBeanFactory"; it is deprecated.(é™¤•8ü®ÍÇÃ-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(»ıÉÓ8í÷³ÇÃ-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(“§¼ë8¦ÓÇÃ-
+esquid:CallToDeprecatedMethod!"6Remove this use of "XmlBeanFactory"; it is deprecated.(é™¤•8Š…ÎÇÃ-
+V
+squid:S106("9Replace this use of System.out or System.err by a logger.(ªìçê8›·ÒÇÃ-
+†squid:UselessImportCheck"[Remove this unused import 'org.springframework.beans.factory.support.BeanDefinitionReader'.(Š˜Øà8±³ÉÏÃ-
+Jsquid:S1481&",Remove this unused "movies1" local variable.(ˆüŠÑ8›·ÒÇÃ-
+Ysquid:S1854&";Remove this useless assignment to local variable "movies1".(ˆüŠÑ8›·ÒÇÃ-
+Jsquid:S1481!",Remove this unused "factory" local variable.(é™¤•8¬­ÌÇÃ-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªóÛàüÿÿÿÿ8ø¼ôÆÃ-
+V
+squid:S106$"9Replace this use of System.out or System.err by a logger.(“§¼ë8›·ÒÇÃ-
+Lsquid:S1481#")Remove this unused "act1" local variable.(’š¦·øÿÿÿÿ8›·ÒÇÃ-
+Ysquid:S1854!";Remove this useless assignment to local variable "factory".(é™¤•8¬­ÌÇÃ-
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªìçê8Œ›·ÇÃ-
+[
+squid:S106""9Replace this use of System.out or System.err by a logger.(Îûÿÿÿÿÿ8ŒşÏÇÃ-
